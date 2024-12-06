@@ -89,25 +89,25 @@ Maximum KS statistic observed in the first three deciles, ensuring strong discri
 
 ### Significant Variables:
 
-Credit Utilization Ratio (IV = 2.35): Higher usage significantly increases default risk.
+Credit Utilization Ratio (IV = 2.423): Higher usage significantly increases default risk.
 
-Delinquency Ratio (IV = 0.71): Strongly linked to increased default risk.
+Delinquency Ratio (IV = 0.678): Strongly linked to increased default risk.
 
-Loan-to-Income Ratio (IV = 0.47): Higher loan amounts relative to income increase default likelihood.
+Loan-to-Income Ratio (IV = 0.492): Higher loan amounts relative to income increase default likelihood.
 
-Average Days Past Due per Delinquency (IV = 0.40): Correlates with higher default risk.
+Average Days Past Due per Delinquency (IV = 0.421): Correlates with higher default risk.
 
-Loan Purpose (IV = 0.36): Certain purposes are more associated with default.
+Loan Purpose (IV = 0.394): Certain purposes are more associated with default.
 
-Residence Type (IV = 0.24): Moderate impact on default risk.
+Residence Type (IV = 0.259): Moderate impact on default risk.
 
-Loan Tenure Months (IV = 0.21): Longer tenures increase default risk.
+Loan Tenure Months (IV = 0.235): Longer tenures increase default risk.
 
-Loan Type (IV = 0.16): Minor influence on default risk.
+Loan Type (IV = 0.173): Minor influence on default risk.
 
-Age (IV = 0.08): Younger or older age has minimal impact.
+Age (IV = 0.076): Younger or older age has minimal impact.
 
-Number of Open Accounts (IV = 0.08): More accounts can lead to higher default risk.
+Number of Open Accounts (IV = 0.073): More accounts can lead to higher default risk.
 
 ### Modular Structure:
 
