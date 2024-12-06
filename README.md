@@ -5,7 +5,7 @@ This repository contains a Credit Risk Modelling project that evaluates the defa
 
 The project comprises two main components:
 
-Machine Learning Backend:
+### Machine Learning Backend:
 
 Prepares input features for the model using prediction_helper.py.
 
@@ -13,23 +13,23 @@ Utilizes a trained logistic regression model to predict default probabilities.
 
 Scales numerical data with MinMaxScaler to ensure normalized inputs for accurate predictions.
 
-Interactive Web Application:
+### Interactive Web Application:
 
 Built with Streamlit (main.py).
 
 Provides a user-friendly interface for data input and risk assessment.
 
-Features
+### Features
 
 Backend (prediction_helper.py)
 
-Input Preparation:
+### Input Preparation:
 
 Ensures inputs match the required feature set using dummy variables for missing fields.
 
 Scales numerical inputs with the pre-trained MinMaxScaler.
 
-Credit Risk Calculation:
+### Credit Risk Calculation:
 
 Computes the default probability using logistic regression.
 
@@ -37,23 +37,23 @@ Derives a credit score scaled between 300 and 900.
 
 Assigns a risk rating (Poor, Average, Good, Excellent) based on the score.
 
-Dynamic Prediction:
+### Dynamic Prediction:
 
 Calculates predictions on-the-fly for the given user inputs.
 
-Frontend (main.py)
+### Frontend (main.py)
 
-User Inputs:
+### User Inputs:
 
 Collects user data (e.g., age, income, loan amount, delinquency ratio).
 
 Provides dropdown options for categorical variables (e.g., residence type, loan purpose).
 
-Loan Insights:
+### Loan Insights:
 
 Calculates and displays the Loan-to-Income Ratio.
 
-Interactive Buttons:
+### Interactive Buttons:
 
 "Calculate Risk" button processes inputs and displays:
 
@@ -63,31 +63,31 @@ Credit Score
 
 Risk Rating
 
-Streamlit-Based Design:
+### Streamlit-Based Design:
 
 Modular and responsive layout using rows and columns.
 
-Key Insights from Code
+## Key Insights from Code
 
-Feature Engineering:
+### Feature Engineering:
 
 New features like loan_to_income and one-hot encoded variables enhance model interpretability and prediction accuracy.
 
-Scalability:
+### Scalability:
 
 The use of cols_to_scale ensures that only the necessary numerical features are scaled, making it adaptable for other datasets.
 
-Credit Scoring Logic:
+### Credit Scoring Logic:
 
 The credit score system aligns with industry standards by mapping non-default probabilities to a 300-900 scale, aiding financial decision-making.
 
-Model Performance:
+### Model Performance:
 
 Achieved AUC > 85, Gini > 85, and KS statistic > 40.
 
 Maximum KS statistic observed in the first three deciles, ensuring strong discriminatory power.
 
-Significant Variables:
+### Significant Variables:
 
 Credit Utilization Ratio (IV = 2.35): Higher usage significantly increases default risk.
 
@@ -109,7 +109,7 @@ Age (IV = 0.08): Younger or older age has minimal impact.
 
 Number of Open Accounts (IV = 0.08): More accounts can lead to higher default risk.
 
-Modular Structure:
+### Modular Structure:
 
 prediction_helper.py separates model-related logic, ensuring clean and maintainable code.
 
@@ -132,3 +132,21 @@ pandas
 scikit-learn
 
 joblib
+
+# Application Workflow
+
+Enter user details in the provided fields (e.g., age, income, loan amount).
+
+Click on the "Calculate Risk" button to compute predictions.
+
+View the results:
+
+Default Probability
+
+Credit Score
+
+Risk Rating
+
+Adjust input values and observe updated predictions dynamically.
+
+
